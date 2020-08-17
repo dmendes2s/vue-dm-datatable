@@ -1,4 +1,4 @@
-# dm-datatable
+# vue-dm-datatable
 
 ## Over View
 
