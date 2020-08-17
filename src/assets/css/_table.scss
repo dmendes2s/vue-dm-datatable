@@ -1,0 +1,167 @@
+#dm-datatable-table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #FFF;
+
+    &.table-line {
+      th, td {
+        border-bottom: 1px solid $colorGray;
+      }
+    }
+
+    &.table-bordered {
+      th, td {
+        border: 1px solid $colorGray;
+      }
+    }
+
+    &.table-striped {
+      tr:not(.details) {     
+        &:nth-child(even) {
+          background: #f2f2f2;  
+        }
+      }
+    }
+
+    &.table-hover {
+      tbody {
+        tr:not(.details) {
+          &:hover {
+            background: $colorGray!important;
+          }
+        }
+      }
+    }
+
+     thead {
+      tr {        
+        th {
+          padding: 10px;
+          font-size: 14px;
+          text-align: center;
+          font-weight: bold;
+
+          &.sort {
+            cursor: pointer;    
+          }
+  
+          > .icons {
+            margin-left: 10px;    
+          }
+        }
+      }
+    }
+
+    tbody {
+
+      > tr {
+
+        &.details {
+          > td {            
+            > .table {
+              > thead {                
+                > tr {                  
+                  > th {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        > td {
+          padding: 10px;
+          font-size: 14px;
+          text-align: center;
+
+          &.actions {
+
+            > span {
+              display: flex;
+              justify-content: space-around;
+                
+              > button {
+                border: transparent;
+                border-radius: .25rem;
+                outline: none;
+                padding: 4px;
+                cursor: pointer;
+                color: #FFF;
+                font-size: 12px;
+                transition: all 0.15s;
+                margin: 0 2px;
+
+                &.danger {
+                  background: $_colorDanger;
+
+                  &:hover {
+                    background: $_colorDangerHover;
+                  }
+                }
+
+                &.info {
+                  background: $_colorInfo;
+
+                  &:hover {
+                    background: $_colorInfoHover;
+                  }
+                }
+
+                &.success {
+                  background: $_colorSuccess;
+
+                  &:hover {
+                    background: $_colorSuccessHover;
+                  }
+                }
+
+                &.warning {
+                  background: $_colorWarning;
+
+                  &:hover {
+                    background: $_colorWarningHover;
+                  }
+                }
+
+                &.primary {
+                  background: $_colorPrimary;
+
+                  &:hover {
+                    background: $_colorPrimaryHover;
+                  }
+                }
+
+                &.default {
+                  background: $_colorDefault;
+
+                  &:hover {
+                    background: $_colorDefaultHover;
+                  }
+                }
+              }
+            }  
+          }
+  
+          i {
+            cursor: pointer;
+  
+            &.fa-plus-square-o {
+              color: $colorPrimary;
+            }
+  
+            &.fa-minus-square-o {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

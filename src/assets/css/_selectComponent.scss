@@ -1,0 +1,64 @@
+#dm-select-component {
+    width: 60px;
+    border: $borderElementsForm;
+    background-color: #FFF;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+
+    > .selected {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        font-size: $standardFont;
+    }
+
+    &.round {
+        border-radius: $borderRadiusElementsForm;
+    }
+
+    > i {
+        position: absolute;
+        right: 0;
+        right: 3px;
+        font-size: $iconsFont;
+        top: 8px;
+    }            
+
+    .options {
+        width: 100%;
+        min-height: 30px;
+        margin-top: 2px;
+        border: $borderElementsForm;
+        background: #FFF;
+        position: absolute;
+
+        > i {
+            color: red;
+        }
+
+
+        &.round {
+            border-radius: $borderRadiusElementsForm;
+        }
+
+        > span {
+            display: block;
+            font-size: $standardFont;
+            padding: 2px;
+            margin-bottom: 2px;
+
+            &:hover {
+                background: $colorPrimary;
+                color: #FFF;
+                cursor: pointer;
+            }
+
+            &.selected {
+                background: $colorPrimary;
+                color: #FFF;
+            }
+        }
+    }
+}

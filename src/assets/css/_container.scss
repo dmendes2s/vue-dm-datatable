@@ -1,0 +1,26 @@
+#dm-datatable-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: $colorSecond;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+
+    .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        background: $colorPrimary;
+        color: #FFF;
+        padding: 6px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+}
+
+

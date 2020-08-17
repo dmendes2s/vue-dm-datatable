@@ -1,0 +1,52 @@
+#dm-datatable-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    > .paginate {
+        > ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            > li {
+                display: inline-block;
+                margin: 2px;
+
+                > button {
+                    min-width: 25px;
+                    height: 25px;
+                    border: none;
+                    border-bottom: 2px solid $colorPrimary;
+                    cursor: pointer;
+                    outline: none;
+
+                    &.active {
+                        background: $colorSecond;
+                        color: #fff;
+                        border: none;
+                    }
+
+                    &.round {                
+                        border: 1px solid $colorGray;
+                        border-radius: 50%;
+                    }
+
+                    &:hover {
+                        background: $colorPrimary;
+                        color: #FFF;
+                    }
+
+                    &:disabled {
+                        background: none;
+                        border: none;
+                        color: #000;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}
