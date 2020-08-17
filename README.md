@@ -13,7 +13,7 @@ According to usage and popularity, we will evolve to better documentation.
 ## Getting started
 
 ```
-npm install dm-datatable
+npm install vue-dm-datatable
 ```
 
 #### Importing and Using
