@@ -77,7 +77,7 @@ export default class HeaderComponent extends Vue {
     private notSort () {
         const columnsShow = this.columns.filter((column: IPropsColumns) => column.show);
         return columnsShow.map((column: IPropsColumns) => {
-             return <th><span class="name">{ column.name }</span></th>;
+             return <th><span class="name">{ column.title }</span></th>;
         });
     }
 
