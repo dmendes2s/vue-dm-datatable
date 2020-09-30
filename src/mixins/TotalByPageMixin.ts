@@ -21,7 +21,7 @@ export default class TotalByPageMixin extends Vue {
     private stateSearch      = getModule(moduleSearchState,store);
     private stateInfo        = getModule(moduleInfoState,store);
 
-    private cloneTotalByPage = 5;
+    private cloneTotalByPage = 0;
     private totalByPageMsgWarning = "The totalByPage property expects an number of data!";
 
     private totalByPageValidate (totalByPage: any) {
@@ -83,7 +83,7 @@ export default class TotalByPageMixin extends Vue {
     }
 
     @Watch('cloneTotalByPage')
-    setClonseTotalByPage () {
+    setCloneTotalByPage () {
         this.totalByPageDispatchActionMounted(this.cloneTotalByPage);
     }
 
