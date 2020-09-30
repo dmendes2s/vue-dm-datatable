@@ -9,7 +9,7 @@ export default {
     info: (totalShowPage: number, totalByPage: number, totalRow: number, search: {isSearching: boolean, total: number}) => {   
         let message = stateLang.getLang.info?.
         replace("$show",String(totalShowPage)).
-        replace("$totaByPage",String(totalByPage)).
+        replace("$totalByPage",String(totalByPage)).
         replace("$total",String(totalRow));
 
         if(search.isSearching) {

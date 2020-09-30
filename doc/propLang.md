@@ -6,7 +6,7 @@ Words preceding the "$" symbol are variables and must remain immutable dm-datata
 {
     "emptyRows": "No records found",
     "emptyRowsSearch": "No records found for this search",
-    "info": "Showing $show of $totaByPage from $total records",
+    "info": "Showing $show of $totalByPage from $total records",
     "infoFilter": "Total filtered $total",
     "textDetailRows": "Details",
     "totalByPage": "Show",
